@@ -8,7 +8,7 @@ This repository is primarily a **portfolio project** to showcase Swift/SwiftUI c
 ---
 
 ## Demo
-![HotKeys Demo](./assets/HotkeysApp.gif)
+![HotKeys Demo](./assets/demo.gif)
 
 ---
 

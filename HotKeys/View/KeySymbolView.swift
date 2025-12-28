@@ -36,7 +36,7 @@ struct KeyValueRow: View {
     let modifier: Modifier
     
     // TODO: Use Theme
-    let modifierFont: Font = .body
+    let modifierFont: Font = Theme.modifierFont
     
     var body: some View {
         HStack {

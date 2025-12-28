@@ -21,7 +21,7 @@ struct Theme {
     static let hotkeyWidth: CGFloat? = nil
     static let subtitleColor: Color = .red
     
-    func layout( isIPad: Bool) -> AnyLayout {
+    static func layout( isIPad: Bool) -> AnyLayout {
         isIPad ? AnyLayout( VStackLayout(alignment: .leading)) : AnyLayout( HStackLayout())
     }
 }
@@ -38,7 +38,7 @@ struct Theme {
     static let hotkeyWidth: CGFloat? = 200
     static let subtitleColor: Color = .red
     
-    func layout( isIPad: Bool) -> AnyLayout {
+    static func layout( isIPad: Bool) -> AnyLayout {
         AnyLayout( HStackLayout())
     }
 }

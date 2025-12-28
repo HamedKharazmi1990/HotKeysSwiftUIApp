@@ -9,13 +9,20 @@ This repository is primarily a **portfolio project** to showcase Swift/SwiftUI c
 
 ## Demo
 <div align="center">
-  <img   src="./assets/demo.gif" width="300" alt="iPhone Demo" />
-  <img   src="./assets/demo_iPad.gif" width="300" alt="iPad Demo" />
-  <img   src="./assets/demo_mac.gif" width="300" alt="Mac Demo" />
-
-  <br/>
-  <sub>iPhone</sub> &nbsp; &nbsp; <sub>iPad</sub> &nbsp; &nbsp; <sub>macOS</sub>
+  <table>
+    <tr>
+      <td align="center"><img src="./assets/demo.gif" height="300" alt="iPhone" /></td>
+      <td align="center"><img src="./assets/demo_iPad.gif"  height="300" alt="iPad" /></td>
+      <td align="center"><img src="./assets/demo_mac.gif"   height="300" alt="macOS" /></td>
+    </tr>
+    <tr>
+      <td align="center"><sub>iPhone</sub></td>
+      <td align="center"><sub>iPad</sub></td>
+      <td align="center"><sub>macOS</sub></td>
+    </tr>
+  </table>
 </div>
+
 
 
 ---

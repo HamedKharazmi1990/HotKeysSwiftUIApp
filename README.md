@@ -8,10 +8,11 @@ This repository is primarily a **portfolio project** to showcase Swift/SwiftUI c
 ---
 
 ## Demo
-<a href="./assets/demo.gif">
-  <img src="./assets/demo.gif" height="360" alt="HotKeys Demo" />
-</a>
-
+<div align="center">
+  <a href="./assets/demo.gif">
+    <img src="./assets/demo.gif" height="420" alt="HotKeys Demo" />
+  </a>
+</div>
 
 ---
 

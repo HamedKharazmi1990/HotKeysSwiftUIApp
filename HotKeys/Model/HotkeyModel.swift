@@ -13,9 +13,9 @@ struct HotkeyModel: Identifiable {
     let modifiers: [Modifier]
     let character: String
     let text: String
-    
-    // TODO: Update description
+
     var description: String {
-        "\(modifiers) \(character.capitalized)"
+        modifiers.map(\.rawValue).joined()
+        + " \(character.capitalized)"
     }
 }

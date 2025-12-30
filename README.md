@@ -1,9 +1,9 @@
-# HotKeys (SwiftUI) ⌨️
+# ⌨️ HotKeys
 
-A cross-platform SwiftUI app (iPhone, iPad, and Mac) that provides a fast, searchable reference of **Xcode keyboard shortcuts**.  
-This repository is primarily a **portfolio project** to showcase Swift/SwiftUI code quality and app structure for job applications.
+**HotKeys** is a cross-platform Apple application that allows users to search **Mac keyboard shortcuts** across **iPhone, iPad, and macOS**.  
+The app is built using **SwiftUI** with a shared codebase and follows a clean **MVVM architecture** for maintainability and scalability.
 
-> ✅ Purpose: share clean, reviewable SwiftUI code and UX patterns across Apple platforms.
+HotKeys is designed to enhance productivity by enabling fast, consistent keyboard-driven actions across all Apple platforms.
 
 ---
 
@@ -23,58 +23,82 @@ This repository is primarily a **portfolio project** to showcase Swift/SwiftUI c
   </table>
 </div>
 
+---
 
+## ✨ Features
+
+- ⌨️ Searchable **Mac keyboard shortcuts**
+- 📱 Works on **iPhone**, **iPad**, and **Mac**
+- 🧩 Shared SwiftUI codebase across platforms
+- ⚡ Fast and lightweight performance
+- 🧱 MVVM architecture
+- 🎯 Platform-aware shortcut handling
+- 🔐 Secure and native system integration
 
 ---
 
-## Platforms & Minimum OS
+## 🧰 Tech Stack
 
-- **iOS** (iPhone) — target: 18.5
-- **iPadOS** (iPad) — target: 18.5
-- **macOS** (Mac) — target: 15.5
-
-> Project is configured as a multi-platform target (SUPPORTED_PLATFORMS: iphoneos, iphonesimulator, macosx xros xrsimulator; DEVICE_FAMILY: 1,2,7).
-
----
-
-## Highlights
-
-- **SwiftUI-first** UI with a clean separation of concerns (Model / View / ViewModel).
-- **Searchable** list of shortcuts with **categorized sections**.
-- A built-in **key symbol legend** (⌘ ⌥ ⇧ ⌃ ⎋ ⏎ …) for quick reference.
-- **Adaptive layout** (uses size classes; better experience on iPad and Mac windows).
-- Centralized **theming** via `Settings/Theme.swift` (typography, sizes).
-- **No external dependencies** (pure Swift & SwiftUI).
+| Category | Technology |
+|--------|------------|
+| **Language** | Swift |
+| **UI Framework** | SwiftUI |
+| **Architecture** | MVVM |
+| **Platforms** | iOS, iPadOS, macOS |
+| **System APIs** | Keyboard / Input APIs |
+| **Concurrency** | async/await |
+| **IDE** | Xcode |
+| **Minimum OS** | iOS 17+, iPadOS 17+, macOS 14+ |
 
 ---
 
-## What’s inside
+## 🚀 Getting Started
 
-- **Categories** (11 total): Product, Scheme, Hide or Show Panels, Navigation, Inspector, Structure, Editing, Miscellaneous, Debugging, File menu commands, Source Control
-- **Shortcuts**: ~53+ Xcode hotkeys curated into practical groups.
-- **Key files**
-  - `HotKeysApp.swift` — app entry point (SwiftUI App lifecycle)
-  - `View/` — `MainHotkeysView`, `HotkeySectionView`, `HotkeyRow`, `KeySymbolView`
-  - `ViewModel/` — `HotkeyCategoryViewModel` (data + filtering)
-  - `Model/` — `HotkeyModel`, `HotkeyCategoryModel`, `Modifier`
-  - `Settings/Theme.swift` — fonts, weights, sizes, colors
-  - `Assets/` — app icon & accent color
+### 1️⃣ Clone the Repository
 
----
+```bash
+git clone "https://github.com/HamedKharazmi1990/HotKeysSwiftUIApp"
+cd HotKeys
+```
 
-## Getting Started
+### 2️⃣ Open the Project
 
-### Requirements
-- macOS with **Xcode (latest stable recommended)**
+    1. Open HotKeys.xcodeproj in Xcode
+    2. Select a destination:
+        - iPhone Simulator
+        - iPad Simulator
+        - My Mac
+    3. Press Run (⌘R)
 
-### Run
-1. Clone:
-   ```bash
-   git clone https://github.com/HamedKharazmi1990/HotKeysSwiftUIApp.git
-   # If your repo name is different, adjust the URL accordingly.
-2. Open in Xcode:
-    - Open the Xcode project (*.xcodeproj) or workspace (*.xcworkspace if applicable)
-3. Choose a destination:
-    - iPhone / iPad Simulator
-    - My Mac (macOS)
-4. Build & Run (⌘R)
+### 📱 Supported Platforms
+| Platform | Support |
+|--------|------------|
+| **iPhone** | ✅ |
+| **iPad** | ✅ |
+| **macOS** | ✅ |
+
+Keyboard shortcuts are handled based on platform capabilities.
+
+
+ ###   🧩 Project Structure
+    HotKeys
+    ├── Assets.xcassets
+    ├── Models
+    │   └── HotKey.swift           # Shortcut data model
+    ├── ViewModels
+    │   └── HotKeyViewModel.swift  # State & business logic
+    ├── Views
+    │   ├── HotKeyListView.swift   # Shortcut list
+    │   ├── HotKeyRowView.swift    # Single shortcut UI
+    │   └── AddHotKeyView.swift    # Create/edit shortcut
+    ├── Services
+    │   └── HotKeyManager.swift   # Platform-aware key handling
+    └── HotKeysApp.swift          # App entry point
+
+### 👨‍💻 Maintainer
+
+    Hamed Kharazmi
+    📧 hamed.kharazmi@gmail.com
+
+
+    
